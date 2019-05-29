@@ -1,0 +1,26 @@
+<!doctype html>
+<html>
+<head>
+	<title>Login Admin</title>
+	<link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+	<link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+</head>
+<body>
+	<div class="login">
+		<img src="{{ url_for('static', filename='logo.png') }}"/>
+		<h2>LOGIN ADMIN</h2>
+		<form method="POST">
+			<input class="password" type="password" name="passwordadmin" id="passwordadmin" required/>
+			<br>
+			<button class="loginbutton">LOGIN</button>
+		</form>
+		{% with messages = get_flashed_messages() %}
+			{% if messages %}
+				{% for message in messages %}
+					<h2>{{ message }}</h2>
+				{% endfor %}
+			{% endif %}
+		{% endwith %}
+	</div>
+</body>
+</html>

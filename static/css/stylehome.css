@@ -1,0 +1,65 @@
+body {
+	margin: 0;
+	background-color: #E7ECEF;
+}
+
+img {
+	height: 50px;
+}
+
+h1 {
+	font-family: 'Roboto';
+	margin: 10px;
+}
+
+h2 {
+	font-family: 'Roboto';
+	color: #6793B0;
+	margin: auto;
+	width: 50%;
+	font-size: 16pt;
+	padding: 10px;
+}
+
+table, th, td {
+	font-family: 'Roboto';
+	border: 1px solid black;
+	border-collapse: collapse;
+}
+
+.form_group {
+	margin: 10px;
+	font-family: 'Roboto';
+}
+
+.mainbody {
+	margin: 10px;
+}
+
+.adminhome{
+	background-color: #E7ECEF;
+}
+
+.header {
+	height: 50px;
+	background-color: #E7ECEF;
+}
+
+.navbar {
+	overflow: hidden;
+	background-color: #A3CEF1;
+}
+
+.navbar a{
+	float: right;
+  	display: block;
+  	color: #ffffff;
+  	text-align: center;
+  	padding: 14px 16px;
+  	text-decoration: none;
+  	font-family: 'Roboto';
+}
+
+.navbar a:hover {
+  background-color: #6096BA;
+}

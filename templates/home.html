@@ -1,0 +1,55 @@
+<!doctype html>
+<html>
+<head>
+	<title>Find Drug Admin</title>
+	<link rel="stylesheet" href="{{ url_for('static', filename='css/stylehome.css') }}">
+	<link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+</head>
+<body class="adminhome">
+	<div class="navbar">
+		<a type="button" onclick="window.location.href='{{ url_for ('login')}}'">Logout</a>
+	</div>
+
+	<div class="mainbody">
+		<h1>Database obat</h1>
+		<form method=POST enctype=multipart/form-data>
+		<div class="form_group">
+			<label for="file" style="margin: 5px">Database Input</label>
+			<br>
+			<input type="file" name="file" style="margin: 5px">
+			{% with messages = get_flashed_messages() %}
+				{% if messages %}
+					{% for message in messages %}
+						<label>{{ message }}</label>
+					{% endfor %}
+				{% endif %}
+			{% endwith %}
+			<br>
+			<button type="submit" value=Upload style="margin:  5px">Submit</button>
+		</div>
+		</form>
+		<table class="drugtable" style="width: 100%">
+		<tr>
+			<th>Nama Obat</th>
+			<th>Nama Generik</th>
+			<th>Kelas Terapi</th>
+			<th>Kandungan</th>
+			<th>Indikasi</th>
+			<th>Kontra Indikasi</th>
+			<th>Efek Samping</th>
+			<th>Interaksi Obat</th>
+		</tr>
+		<tr>
+			<td>dummy</td>
+			<td>dummy</td>
+			<td>dummy</td>
+			<td>dummy</td>
+			<td>dummy</td>
+			<td>dummy</td>
+			<td>dummy</td>
+			<td>dummy</td>
+		</tr>
+		</table>
+	</div>
+</body>
+</html>
