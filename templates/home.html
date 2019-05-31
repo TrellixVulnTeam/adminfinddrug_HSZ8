@@ -49,6 +49,20 @@
 			<td>dummy</td>
 			<td>dummy</td>
 		</tr>
+		{% with alldata = all_data %}
+			{% for data in alldata %}
+			<tr>
+				<td>{{ data[1] }}</td>
+				<td>{{ data[2] }}</td>
+				<td>{{ data[3] }}</td>
+				<td>{{ data[4] }}</td>
+				<td>{{ data[5] }}</td>
+				<td>{{ data[6] }}</td>
+				<td>{{ data[7] }}</td>
+				<td>{{ data[8] }}</td>
+			</tr>
+			{% endfor %}
+		{% endwith %}
 		</table>
 	</div>
 </body>

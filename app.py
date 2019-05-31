@@ -1,4 +1,6 @@
 import os
+import re
+import sqlite3
 from flask import Flask, redirect, url_for, request, flash, render_template
 from flask_sqlalchemy import SQLAlchemy
 from tika import parser
@@ -10,6 +12,8 @@ app = Flask(__name__)
 app.secret_key = 'admin_password'
 path = app.instance_path+"\data_obat.db"
 app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///'+path
+conn = sqlite3.connect(path)
+cur = conn.cursor()
 db = SQLAlchemy(app)
 
 class DataObat(db.Model):
@@ -51,10 +55,13 @@ def login():
 
 @app.route("/home", methods=['POST','GET'])
 def home():
-	
+	conn = sqlite3.connect(path)
+	cursor = conn.cursor()
+
 	if request.method == 'POST':
 		file = request.files['file']
 		if file and allowed_file(file.filename):
+			cursor.execute("")
 			filename = secure_filename(file.filename)
 			print('File saving...')
 			file.save(os.path.join(app.instance_path, filename))
@@ -63,20 +70,24 @@ def home():
 			parse_file(filename)
 			print('File parsed!')
 			flash('File parsed!')
-			add_data(2,'data','ini','hanya','untuk','coba','coba','terima','kasih')
 			print('Data added!')
 		else:
 			print('File not allowed!')
 
-	return render_template('home.html')
+	cursor.execute("SELECT * FROM data_obat")
+
+	return render_template('home.html', all_data = cursor.fetchall())
 
 def allowed_file(filename):
 	return '.' in filename and \
 		filename.rsplit('.', 1)[1].lower() in ALLOWED_EXTENSIONS
 
 def parse_file(filename):
+	conn = sqlite3.connect(path)
+	cursor = conn.cursor()
+
 	file = os.path.join(app.instance_path, filename)
-	parsedfile = open("static\\parsed.txt","w")
+	parsedfile = open("static\\parsed.txt","w",  encoding='utf8')
 	# Parse data from file
 	file_data = parser.from_file(file)
 	print("File Parsed!")
@@ -89,12 +100,45 @@ def parse_file(filename):
 	with open('static\\parsed.txt', 'r') as fin:
 		data = fin.read().splitlines(True)
 	with open('static\\parsed.txt', 'w') as fout:
-		fout.writelines(data[25:])
+		fout.writelines(data[23:])
 
-def add_data(id, namaobat, namagenerik, namakelas, kandungan, indikasi, kontraindikasi, efeksamping, interaksiobat):
+	read_file = open('static\\parsed.txt', 'r')
+	cursor.execute("SELECT COUNT(*) FROM data_obat")
+	total_row = cursor.fetchone()[0]
+	print(total_row)
+
+	doi_title_pattern = "( : \n)"
+	list_data = []
+	isComplete = False
+	for line in read_file:
+		if re.search(doi_title_pattern,line) or not re.search(". \n",line):
+			print("Skipped")
+		else:
+			print(line)
+			list_data.append(line)
+
+		if len(list_data) == 8:
+			total_row = total_row+1;
+			add_data(total_row+1,list_data[0], list_data[1], list_data[2], list_data[3], list_data[4], list_data[5], list_data[6], list_data[7])
+			print("Data added!")
+
+
+	print("OLRAIT")
+	for listed in list_data:
+		print(listed)
+
+def add_data(id,namaobat, namagenerik, namakelas, kandungan, indikasi, kontraindikasi, efeksamping, interaksiobat):
 	new_data = DataObat(id,namaobat,namagenerik,namakelas,kandungan,indikasi,kontraindikasi,efeksamping,interaksiobat)
 	db.session.add(new_data)
 	db.session.commit()
+
+def update_table():
+	conn = sqlite3.connect(path)
+	cursor = conn.cursor()
+
+	cursor.execute("SELECT * FROM data_obat")
+	all_data = cursor.fetchall()
+
 
 if __name__ == "__main__":
 	app.run()

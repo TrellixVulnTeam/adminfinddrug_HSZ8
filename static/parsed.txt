@@ -1,181 +1,84 @@
-Nama Pasar Nama Generik Nama Kelas Kandungan Indikasi Kontra Indikasi Efek Samping
-Interaksi obat 
-
-lain
-
-Abajos Parasetamol Analgesik
-
-Parasetamol 
-500 mg; 
-Thiamin HCl 50 
-mg; Pyridoksin 
-HCl 100 mg; 
-Cyanocobalami
-n 100 mcg
-
-Neuritis, 
-nerualgin, 
-demam
-
-Kerusakan 
-fungsi hati
-
-Reaksi 
-hipersensitivitas -
-
-Afebrin Parasetamol Analgesik Parasetamol
-
-Nyeri, demam, 
-sakit kepala, 
-mialgia, 
-neuralgia, sakit 
-gigi, 
-reumatisme -
-
-Reaksi alergi, 
-reaksi 
-hematologik, 
-reaksi kulit
-
-Alkohol, 
-antikoagulan 
-oral, 
-chloramfenikol, 
-aspirin, 
-phenobarbital, 
-zat-zat 
-hepatotoksik
-
-Agrippin Parasetamol Analgesik
-
-Tiap tablet atau 
-15 ml sirop: 
-Parasetamol 
-300 mg, 
-fenilpropanolam
-ina-HCl 12,5 
-mg, 
-klorfeniramina 
-maleat 1 mg, 
-Vit-C 25 mg
-
-Demam, sakit 
-kepala, pilek, 
-anti alergik - - -
-
-Aknil Ibuprofen Analgesik
-
-Ibuprofen 200 
-mg; 
-parasetamol 
-325 mg
-
-Sakit kepala, 
-neuralgin, 
-dismenorea, 
-nyeri pasca 
-operasi luka, 
-sakit gigi, pasca 
-cabut gigi, 
-demam
-
-Ulserasi peptik 
-aktif
-
-Gangguan 
-saluran cerna, 
-pusing, depresi, 
-mengantuk, 
-reaksi kulit, 
-agranulositosis, 
-trombositopenia
-
-Penggunaan 
-ibuprofen 
-bersamaan 
-dengan 
-antikoagulan 
-coumarin dapat 
-menambah 
-resiko 
-perdarahan
-
-Alfidon Parasetamol Analgesik
-
-Tiap tablet : 
-Parasetamol 
-500 mg, kofeina 
-anhidrat 50 mg
-
-Meringankan 
-sakit kepala, 
-nyeri otot, rasa 
-sakit pada gigi
-
-Jangan 
-digunakan pada 
-penderita 
-kelainan hati - -
+Accolate 
+Zafirlukast 
+Antiasma 
+ 
+Kandungan : 
+Zafirlukast 
+ 
+Indikasi : 
+Pengobatan dan pencegahan asma untuk dewasa dan anak-anak > 12 tahun 
+ 
+Kontra Indikasi : 
+Gangguan fungsi ginjal berat, sirosis hati anak-anak < 12 thn 
+ 
+Efek Samping : 
+Mual, muntah, nyeri perut, sakit kepala, ruam kulit 
+ 
+Interaksi Obat : 
+Warfarin, teofilin, terfenadin, aspirin, eritromisin 
+ 
+ 
+Asmacare 
+Salbutamol 
+Antiasma 
+ 
+Kandungan : 
+Salbutamol 
+ 
+Indikasi : 
+Melebarkan bronkus pada semua tipe asma, bronkitis kronis, emfisema 
+ 
+Kontra Indikasi : 
+Jangan diminum bersamaan obat-obat penyekat beta 
+ 
+Efek Samping : 
+Tremor halus terutama tangan, debar-debar, kram otot 
+ 
+Interaksi Obat : 
+Obat-obat penyekat beta, propanolol akan memberikan reaksi antagonis 
+ 
+ 
+Astherin 
+Terbutalin 
+Antiasma 
+ 
+Kandungan : 
+Terbutalin sulfat 
+ 
+Indikasi : 
 
 
 
-Alpara Parasetamol Analgesik
-
-Tiap 5 ml sirop : 
-Parasetamol 
-125 mg, 
-dekstrometorpa
-n-HBr 3,75 mg, 
-klorpeniramina 
-maleat 0,5 mg. 
-penilpropanola
-mina-Hcl 3,125 
-mg. Tiap kaplet: 
-Parasetamol 
-500 mg, 
-dekstrometorpa
-n-HBr 12,5 mg
-
-Meringankan 
-influenza yang 
-disertai gejala 
-demam, pilek, 
-bersin, sakit 
-kepala dan 
-batuk - - -
-
-Alphagesic Parasetamol Analgesik Parasetamol
-
-Menghilangkan 
-nyeri dan 
-demam, sakit 
-kepala, sendi-
-sendi, nyeri 
-otot, nyeri 
-pasca beda dan 
-pasca 
-melahirkan - - -
-
-Biogesic Parasetamol Analgesik Parasetamol - - - -
-
-Bodrex Parasetamol Analgesik
-
-Parasetamol 
-500 mg; kofeina 
-50 mg
-
-Sakit kepala, 
-sakit gigi, nyeri 
-otot, demam
-
-Kerusakan hati 
-dan ginjal
-
-Kerusakan hati, 
-palpitasi, 
-insomnia, nyeri 
-lambung -
-
-Bodrex Forte Parasetamol Analgesik Parasetamol - - - -
+Asma bronkial, bronkitis kronis, emfisema 
+ 
+ 
+Kontra Indikasi : 
+- 
+ 
+Efek Samping : 
+Tremor, debar-debar, pusing 
+ 
+Interaksi Obat : 
+Dosis tinggi kortikostreoid dan teofilin menambah resiko hipokalemia 
+ 
+ 
+Asthma Soho 
+Aminofilin 
+Antiasma 
+ 
+Kandungan : 
+Teofilin 125 mg, efedrin hcl 12,5 
+ 
+Indikasi : 
+- 
+ 
+Kontra Indikasi : 
+- 
+ 
+Efek Samping : 
+- 
+ 
+Interaksi Obat : 
+- 
 
 
