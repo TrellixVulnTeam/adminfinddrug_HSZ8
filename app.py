@@ -108,8 +108,11 @@ def parse_file(filename):
 	print(total_row)
 
 	doi_title_pattern = "( : \n)"
+	cursor.execute("DELETE FROM data_obat")
+	conn.commit()
+	print("Database deleted!")
+
 	list_data = []
-	isComplete = False
 	for line in read_file:
 		if re.search(doi_title_pattern,line) or not re.search(". \n",line):
 			print("Skipped")
@@ -119,8 +122,11 @@ def parse_file(filename):
 
 		if len(list_data) == 8:
 			total_row = total_row+1;
-			add_data(total_row+1,list_data[0], list_data[1], list_data[2], list_data[3], list_data[4], list_data[5], list_data[6], list_data[7])
+			add_data(total_row,list_data[0], list_data[1], list_data[2], list_data[3], list_data[4], list_data[5], list_data[6], list_data[7])
+			print("Add :")
+			print(list_data[0])
 			print("Data added!")
+			list_data.clear()
 
 
 	print("OLRAIT")
